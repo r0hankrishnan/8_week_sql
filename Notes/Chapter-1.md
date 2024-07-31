@@ -1,5 +1,17 @@
 # SELECT STAR SQL CHAPTER 1 NOTES
 
+## Table of Contents:
+1. [Thinking about SQL Queries](#thinking-about-sql-queries)
+2. [SQL Syntax](#sql-syntax)
+   - [SELECT](#select-statments)
+   - [FROM](#from-statements)
+   - [WHERE](#where-statements)
+   - [Commenting](#commenting)
+   - [Capitalization](#capitalization))
+   - [Strings](#strings)
+   - [Whitespace](#whitespace)
+3. [Chapter 1 Project](#chapter-1-project)
+
 ## Thinking about SQL Queries
 **Main Takeaway 1:** Queries are constructed like legos
   - Think of "blocks" instead of individual words
