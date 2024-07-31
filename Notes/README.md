@@ -9,22 +9,6 @@ As I work through the 8-week challenge, I will be using the online book [Select 
   - Each block has a specific format and function and fits in with the other blocks in a *specific way*
 
 ## SQL Syntax
-
-### Commenting
-- Use `/*` at the start and end of lines to comment them out
-  - Can also use `--` to comment out entire lines
-
-### Capitalization
-- SQL commands are *not* case-sensitive BUT it is good practice to capitalize SQL commands for ease of reading
-- SQL table names, column names, and variables *are* case-sensitive for many versions of SQL
-
-### Strings
-- Denote with *single quotes*
-- Backticks (`) can be used for table and column names
-### Whitespace
-- SQL is not sensitive to whitespace (as long as different words are separated)
-- Good practice to put each new command on its own line for most queries
-
 ### SELECT Statements
 **Main Takeaway 1:** `SELECT` tells the DB what columns you want to output
 - Purpose: pick which columns you want to show
@@ -54,6 +38,22 @@ As I work through the 8-week challenge, I will be using the online book [Select 
       - `_` returns only any string that contains the arg after the *first* character (or before if `_` is in front)
         -`first_name LIKE '_roy'` only returns Troy because roy and royman do not have characters before 'roy' and Deroy has 2 characters before 'roy'
     - `AND`, `NOT`, `OR` are also useful operators
+
+### Commenting
+- Use `/*` at the start and end of lines to comment them out
+  - Can also use `--` to comment out entire lines
+
+### Capitalization
+- SQL commands are *not* case-sensitive BUT it is good practice to capitalize SQL commands for ease of reading
+- SQL table names, column names, and variables *are* case-sensitive for many versions of SQL
+
+### Strings
+- Denote with *single quotes*
+- Backticks (`) can be used for table and column names
+
+### Whitespace
+- SQL is not sensitive to whitespace (as long as different words are separated)
+- Good practice to put each new command on its own line for most queries
  
 ## Chapter 1 Project
 **Find Napoleon Beazeley's last statement:**
