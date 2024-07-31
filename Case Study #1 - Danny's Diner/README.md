@@ -12,6 +12,8 @@ Danny's Diner is a small restaurant that serve three dishes -- sushi, curry, and
 
 ## Entity Relationship Diagram
 
+
+
 ## Solutions
 **1. What is the total amount each customer spent at the restaurant?**
 
@@ -33,12 +35,22 @@ ORDER BY sum_sales DESC;
 | C           | 36        |
 
 ---
+**2. How many days has each customer visited the restaurant?**
 
-[View on DB Fiddle](https://www.db-fiddle.com/f/2rM8RAnq7h5LLDTzZiRWcd/138)
-| customer_id | sum_sales |
-| ----------- | --------- |
-| A           | 76        |
-| B           | 74        |
-| C           | 36        |
+```sql
+SELECT
+    	sales.customer_id,
+        COUNT(DISTINCT sales.order_date)
+    FROM dannys_diner.sales
+    GROUP BY customer_id;
+```
+
+| customer_id | count |
+| ----------- | ----- |
+| A           | 4     |
+| B           | 6     |
+| C           | 2     |
 
 ---
+**3. What was the first item from the menu purchased by each customer?**
+
