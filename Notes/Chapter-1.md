@@ -67,7 +67,7 @@ Chapter Takeaways:
 ### Whitespace
 - SQL is not sensitive to whitespace (as long as different words are separated)
 - Good practice to put each new command on its own line for most queries
- --
+--
 ## Chapter 1 Project
 **Find Napoleon Beazeley's last statement:**
 - What column do we want? Last statements --> last_statement
