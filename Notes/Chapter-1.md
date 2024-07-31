@@ -7,11 +7,11 @@
    - [FROM](#from-statements)
    - [WHERE](#where-statements)
    - [Commenting](#commenting)
-   - [Capitalization](#capitalization))
+   - [Capitalization](#capitalization)
    - [Strings](#strings)
    - [Whitespace](#whitespace)
 3. [Chapter 1 Project](#chapter-1-project)
-
+---
 ## Thinking about SQL Queries
 **Main Takeaway 1:** Queries are constructed like legos
   - Think of "blocks" instead of individual words
