@@ -1,6 +1,6 @@
 # SELECT STAR SQL NOTES
 
-As I work through the 8-week challenge, I will be using the online book [Select Star SQL](https://selectstarsql.com/) to learn the fundamental syntax and thought-process behind SQL.
+As I work through the 8-week challenge, I will be using the online book [Select Star SQL](https://selectstarsql.com/) to learn the fundamental syntax and thought-process behind SQL. This notes folder will hold my notes and my work for the in-book projects. 
 
 ## Table Used In Select Star SQL
 The table used in the book is a data set made by the autor, [Zi Chong Kao](https://kaomorphism.com/), that contains Texas deathrow inmates executed from 1976 onwards. It's structure is shown below:
