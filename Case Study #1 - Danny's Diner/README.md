@@ -15,7 +15,7 @@ Danny's Diner is a small restaurant that serve three dishes -- sushi, curry, and
 ## Solutions
 **1. What is the total amount each customer spent at the restaurant?**
 
-```{sql}
+```sql
 SELECT 
     sales.customer_id, 
     SUM(menu.price) AS sum_sales
