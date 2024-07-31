@@ -14,10 +14,7 @@ Danny's Diner is a small restaurant that serve three dishes -- sushi, curry, and
 
 ## Solutions
 **1. What is the total amount each customer spent at the restaurant?**
-**Schema (PostgreSQL v13)**
-
-**Query #1**
-
+```{sql}
     SELECT 
     	sales.customer_id, 
     	SUM(menu.price) AS sum_sales
@@ -26,7 +23,7 @@ Danny's Diner is a small restaurant that serve three dishes -- sushi, curry, and
     	ON sales.product_id = menu.product_id
     GROUP BY sales.customer_id
     ORDER BY sum_sales DESC;
-
+```
 | customer_id | sum_sales |
 | ----------- | --------- |
 | A           | 76        |
