@@ -1,5 +1,5 @@
 # SELECT STAR SQL CHAPTER 1 NOTES
-Chapter Takeaways:
+#### Chapter Takeaways:
    1. Think of SQL statements like legos -- specific blocks with specific functions that fit together in defined ways
    2. The general syntax of a simple SQL query is `SELECT <column>,... FROM <table> WHERE <clause>;`
 
