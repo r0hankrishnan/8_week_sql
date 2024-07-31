@@ -1,4 +1,7 @@
 # SELECT STAR SQL CHAPTER 1 NOTES
+Chapter Takeaways:
+   1. Think of SQL statements like legos -- specific blocks with specific functions that fit together in defined ways
+   2. The general syntax of a simple SQL query is `SELECT <column>,... FROM <table> WHERE <clause>;`
 
 ## Table of Contents:
 1. [Thinking about SQL Queries](#thinking-about-sql-queries)
@@ -17,7 +20,7 @@
   - Think of "blocks" instead of individual words
     - [SELECT *] + [FROM table] + [LIMIT 3]
   - Each block has a specific format and function and fits in with the other blocks in a *specific way*
-
+---
 ## SQL Syntax
 ### SELECT Statements
 **Main Takeaway 1:** `SELECT` tells the DB what columns you want to output
@@ -64,7 +67,7 @@
 ### Whitespace
 - SQL is not sensitive to whitespace (as long as different words are separated)
 - Good practice to put each new command on its own line for most queries
- 
+ --
 ## Chapter 1 Project
 **Find Napoleon Beazeley's last statement:**
 - What column do we want? Last statements --> last_statement
