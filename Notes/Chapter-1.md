@@ -27,7 +27,7 @@ Chapter Takeaways:
 - Purpose: pick which columns you want to show
 - Format: `SELECT <column>, <column>, ...`
   - Use `*` to select all columns in a table
----
+----
 ### FROM Statements
 **Main Takeaway 1:** `FROM` tells the DB what table to pull the selected columns from
 - Purpose: chose table to query from
@@ -35,7 +35,7 @@ Chapter Takeaways:
   - `FROM` *ALWAYS comes AFTER* `SELECT`
   - Note that the query will not run if you misspell the table name
 - Do not need to use `FROM` if not using any data from a table
----
+----
 ### WHERE Statements
 **Main Takeaway 1:** `WHERE` tells the DB to filter rows that match the boolean condition we set
 - Purpose: filter chosen tables for rows that meet certain conditions
@@ -51,19 +51,19 @@ Chapter Takeaways:
       - `_` returns only any string that contains the arg after the *first* character (or before if `_` is in front)
         -`first_name LIKE '_roy'` only returns Troy because roy and royman do not have characters before 'roy' and Deroy has 2 characters before 'roy'
     - `AND`, `NOT`, `OR` are also useful operators
-
+----
 ### Commenting
 - Use `/*` at the start and end of lines to comment them out
   - Can also use `--` to comment out entire lines
-
+----
 ### Capitalization
 - SQL commands are *not* case-sensitive BUT it is good practice to capitalize SQL commands for ease of reading
 - SQL table names, column names, and variables *are* case-sensitive for many versions of SQL
-
+----
 ### Strings
 - Denote with *single quotes*
 - Backticks (`) can be used for table and column names
-
+----
 ### Whitespace
 - SQL is not sensitive to whitespace (as long as different words are separated)
 - Good practice to put each new command on its own line for most queries
