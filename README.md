@@ -1,5 +1,5 @@
 # 8-Week SQL Challenge
-This repo will contain my solutions to each of the case studies in Data with Danny's 8-week SQL challenge. You can find links to the document containing each case study and my corresponding solutions below.
+This repo will contain my solutions to each of the case studies in Data with Danny's [8-week SQL challenge](https://8weeksqlchallenge.com/). You can find links to the document containing each case study and my corresponding solutions below. It also contains my notes from the online book, [Select Star SQL](https://selectstarsql.com/), by Zi Chong Kao. 
 
 ## Table of Contents
 | Item | Description |
