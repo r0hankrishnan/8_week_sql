@@ -15,14 +15,16 @@ Danny's Diner is a small restaurant that serve three dishes -- sushi, curry, and
 ## Solutions
 **1. What is the total amount each customer spent at the restaurant?**
 
-    SELECT 
-    	sales.customer_id, 
-    	SUM(menu.price) AS sum_sales
-    FROM dannys_diner.sales
-    INNER JOIN dannys_diner.menu 
-    	ON sales.product_id = menu.product_id
-    GROUP BY sales.customer_id
-    ORDER BY sum_sales DESC;
+```{sql}
+SELECT 
+    sales.customer_id, 
+    SUM(menu.price) AS sum_sales
+FROM dannys_diner.sales
+INNER JOIN dannys_diner.menu 
+    ON sales.product_id = menu.product_id
+GROUP BY sales.customer_id
+ORDER BY sum_sales DESC;
+```
 
 | customer_id | sum_sales |
 | ----------- | --------- |
