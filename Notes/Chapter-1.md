@@ -27,7 +27,7 @@ Chapter Takeaways:
 - Purpose: pick which columns you want to show
 - Format: `SELECT <column>, <column>, ...`
   - Use `*` to select all columns in a table
-
+---
 ### FROM Statements
 **Main Takeaway 1:** `FROM` tells the DB what table to pull the selected columns from
 - Purpose: chose table to query from
@@ -35,7 +35,7 @@ Chapter Takeaways:
   - `FROM` *ALWAYS comes AFTER* `SELECT`
   - Note that the query will not run if you misspell the table name
 - Do not need to use `FROM` if not using any data from a table
-
+---
 ### WHERE Statements
 **Main Takeaway 1:** `WHERE` tells the DB to filter rows that match the boolean condition we set
 - Purpose: filter chosen tables for rows that meet certain conditions
@@ -67,7 +67,7 @@ Chapter Takeaways:
 ### Whitespace
 - SQL is not sensitive to whitespace (as long as different words are separated)
 - Good practice to put each new command on its own line for most queries
---
+---
 ## Chapter 1 Project
 **Find Napoleon Beazeley's last statement:**
 - What column do we want? Last statements --> last_statement
