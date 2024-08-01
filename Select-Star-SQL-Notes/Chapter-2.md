@@ -1,5 +1,5 @@
 # SELECT STAR SQL CHAPTER 2: CLAIMS OF INNOCENCE-- NOTES
-#### Chapter Takeaways:
+#### [Chapter 2](https://selectstarsql.com/innocence.html) Takeaways:
 1. Use aggregate functions to perform operations on multiple rows to get one number (summary values)
 2. Use `COUNT` to count non-`NULL` rows in data
   - `COUNT(*)` can return all rows in table
