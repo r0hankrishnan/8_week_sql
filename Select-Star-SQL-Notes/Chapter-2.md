@@ -16,7 +16,7 @@
    - [Multi-conditionals -- CASE WHEN Blocks](#multi-conditionals---case-when-blocks)
 4. [Looking Up Functions](#looking-up-functions)
 5. [Practice](#practice)
-6. [Chapter 2 Project](#chatper-2-project)
+6. [Chapter 2 Project](#chapter-2-project)
 ---
 ## NULL Values
 **Main Takeaway:** `NULL` means a cell is completely empty
