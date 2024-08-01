@@ -6,7 +6,9 @@
 1. [NULL Values](#null-values)
 2. [Aggregate Functions](#aggregate-functions)
 3. [The COUNT Function](#the-count-function)
-   - [Counting all rows](#counting-all-rows-(including-null-values))
+   - [Counting all rows](#counting-all-rows-including-null-values)
+   - [Basic conditionals](#basic-conditionals)
+   - [Multi-conditionals -- CASE WHEN Blocks](#multi
 ---
 ## NULL Values
 - `NULL` represents the value of an *empty* entry
@@ -27,7 +29,7 @@
 #### Basic conditionals
 - Can use `COUNT` with `WHERE`
   - E.g.: `SELECT COUNT(*) FROM executions WHERE county = 'Harris' will select all exectuions in Harris county
-#### Multi-conditionals-- CASE WHEN BLOCKS
+#### Multi-conditionals-- CASE WHEN Blocks
 - If you wanted to filter by multiple conditions (like looking at counts for multiple counties) you can use a `CASE WHEN` *block*
 - Purpose: Act as an if-else statement for aggregation
 - Format:
