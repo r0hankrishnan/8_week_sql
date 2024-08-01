@@ -157,7 +157,7 @@ FROM executions
 - Using documentation and google to find required function
   - I looked up "sqLite find number of characters in a string"
 
-**5. List all the counties in the data *without duplication*.
+**5. List all the counties in the data *without duplication***.
 ```sql
 SELECT DISTINCT
 	county
