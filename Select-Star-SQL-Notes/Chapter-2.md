@@ -3,7 +3,10 @@
 
 
 ## Table of Contents:
-1. 
+1. [NULL Values](#null-values)
+2. [Aggregate Functions](#aggregate-functions)
+3. [The COUNT Function](#the-count-function)
+   - [Counting all rows](#counting-all-rows-(including-null-values))
 ---
 ## NULL Values
 - `NULL` represents the value of an *empty* entry
