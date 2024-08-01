@@ -164,6 +164,7 @@ SELECT DISTINCT
 FROM executions
 ```
 *Output too long to display*
+
 **Shows:**
 - Commonly used `SELECT DISTINCT` to get unique values of a column
 ---
