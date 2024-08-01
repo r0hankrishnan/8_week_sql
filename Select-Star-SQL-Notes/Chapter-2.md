@@ -113,7 +113,7 @@ FROM executions
 |--------------------------------------------------------------|
 | 110                                                          |
 
--Using two `COUNT` functions:
+- Using two `COUNT` functions:
 ```sql
 SELECT 
 	COUNT(*) - COUNT(last_statement)
