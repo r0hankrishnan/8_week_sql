@@ -8,7 +8,8 @@
 3. [The COUNT Function](#the-count-function)
    - [Counting all rows](#counting-all-rows-including-null-values)
    - [Basic conditionals](#basic-conditionals)
-   - [Multi-conditionals -- CASE WHEN Blocks](#multi
+   - [Multi-conditionals -- CASE WHEN Blocks](#multi-conditionals---case-when-blocks)
+4. [Practice](#practice)
 ---
 ## NULL Values
 - `NULL` represents the value of an *empty* entry
