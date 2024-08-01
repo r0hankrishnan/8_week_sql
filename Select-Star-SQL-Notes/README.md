@@ -10,5 +10,5 @@ The table used in the book is a data set made by the autor, [Zi Chong Kao](https
 
 ---
 ## NOTES FOLDER TABLE OF CONTENTS
-1. [Chapter 1](https://github.com/r0hankrishnan/8-week-sql/blob/main/Notes/Chapter-1.md)
-2. [Chapter 2](https://github.com/r0hankrishnan/8-week-sql/blob/main/Notes/Chapter-2.md)
+1. [Chapter 1](https://github.com/r0hankrishnan/8-week-sql/blob/main/Select-Star-SQL-Notes/Chapter-1.md)
+2. [Chapter 2](https://github.com/r0hankrishnan/8-week-sql/blob/main/Select-Star-SQL-Notes/Chapter-2.md)
