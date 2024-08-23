@@ -54,3 +54,57 @@ SELECT
 ---
 **3. What was the first item from the menu purchased by each customer?**
 
+``sql
+WITH RankedPurchases AS (
+  SELECT 
+    s.customer_id,
+    s.order_date,
+    m.product_name,
+    ROW_NUMBER() OVER (PARTITION BY s.customer_id ORDER BY s.order_date) AS purchase_rank
+  FROM 
+    sales s
+  JOIN 
+    menu m ON s.product_id = m.product_id
+)
+SELECT 
+  customer_id,
+  order_date,
+  product_name
+FROM 
+  RankedPurchases
+WHERE 
+  purchase_rank = 1;
+``
+
+| customer_id | order_date               | product_name |
+| ----------- | ------------------------ | ------------ |
+| A           | 2021-01-01T00:00:00.000Z | curry        |
+| B           | 2021-01-01T00:00:00.000Z | curry        |
+| C           | 2021-01-01T00:00:00.000Z | ramen        |
+
+---
+**4. What is the most purchased item on the menu and how many times was it purchased by all customers?**
+
+```sql
+SELECT 
+  m.product_name,
+  COUNT(s.product_id) AS purchase_count
+FROM 
+  sales s
+JOIN 
+  menu m ON s.product_id = m.product_id
+GROUP BY 
+  m.product_name
+ORDER BY 
+  purchase_count DESC
+LIMIT 1;
+```
+
+| customer_id | order_date               | product_name |
+| ----------- | ------------------------ | ------------ |
+| A           | 2021-01-01T00:00:00.000Z | curry        |
+| B           | 2021-01-01T00:00:00.000Z | curry        |
+| C           | 2021-01-01T00:00:00.000Z | ramen        |
+
+---
+
