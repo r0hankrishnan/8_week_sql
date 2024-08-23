@@ -54,7 +54,7 @@ SELECT
 ---
 **3. What was the first item from the menu purchased by each customer?**
 
-``sql
+```sql
 WITH RankedPurchases AS (
   SELECT 
     s.customer_id,
