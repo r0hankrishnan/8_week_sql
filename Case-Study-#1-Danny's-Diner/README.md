@@ -74,7 +74,7 @@ FROM
   RankedPurchases
 WHERE 
   purchase_rank = 1;
-``
+```
 
 | customer_id | order_date               | product_name |
 | ----------- | ------------------------ | ------------ |
