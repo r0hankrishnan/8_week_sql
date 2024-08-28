@@ -178,7 +178,7 @@ To do decimal division, ensure that one of the numbers is a decimal by multiplyi
 SELECT
 	1.0 * COUNT(CASE WHEN last_statement LIKE '%innocent%'
 		  THEN 1 ELSE NULL END)/
-		  COUNT(*) as "Proportion of Claimed Innocence"
+		  COUNT(*) AS "Proportion of Claimed Innocence"
 FROM executions
 ```
 |Proportion of Claimed Innocence |
