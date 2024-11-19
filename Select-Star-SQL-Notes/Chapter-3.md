@@ -59,6 +59,8 @@ GROUP BY county
 | Colin | 2 |
 | ... | ... |
 
+- In this example, we are looking for the number of executions of inmates over the age of 50 in each county. Since we only want executions over 50 across all counties, we can use the WHERE clause.
+
 **What do we do if we want to filter on the result of the grouping/aggregation?**
 - Use the HAVING block
 - Syntax is HAVING *condition*
@@ -80,3 +82,5 @@ HAVING COUNT(*) > 2
 | Lubbock |
 | Montogomery |
 | Tarrant |
+
+- In the above example, we only wanted the counties with more than two inmates over the age of 50. We would not have been able to filter the counties using WHERE so we use HAVING after grouping by counties.
