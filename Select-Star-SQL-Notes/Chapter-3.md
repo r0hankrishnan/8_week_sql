@@ -9,5 +9,22 @@
 ## The GROUP BY Block
 - Split up data into groups and perform aggregations that result in one row **per group**
   - Helpful when we need to perform aggregations over group instances of our rows    instead over the whole table
-- Example:
+
+Example:
 ```sql
+SELECT
+   county,
+   COUNT(*) AS county_executions
+FROM executions
+GROUP BY county
+```
+Output (truncated to top 5): 
+| county | county_executions |
+|--------|-------------------|
+| Anderson | 4 |
+| Aransas | 1 |
+| Atascosa | 1 |
+| Bailey | 1 |
+| Bastrop | 1 |
+| ....... | ... |
+
