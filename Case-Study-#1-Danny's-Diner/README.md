@@ -98,11 +98,9 @@ ORDER BY
 LIMIT 1;
 ```
 
-| customer_id | order_date               | product_name |
-| ----------- | ------------------------ | ------------ |
-| A           | 2021-01-01T00:00:00.000Z | curry        |
-| B           | 2021-01-01T00:00:00.000Z | curry        |
-| C           | 2021-01-01T00:00:00.000Z | ramen        |
+| product_name | purchase_count |
+|--------------|----------------|
+| ramen        | 8              |
 
 ---
 **5. Which item was the most popular for each customer?**
