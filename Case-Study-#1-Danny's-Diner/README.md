@@ -107,6 +107,30 @@ LIMIT 1;
 ---
 **5. Which item was the most popular for each customer?**
 
+```sql
+WITH customer_order_counts AS (
+    SELECT 
+        s.customer_id, 
+        m.product_name, 
+        COUNT(s.product_id) AS order_count,
+        RANK() OVER (PARTITION BY s.customer_id ORDER BY COUNT(s.product_id) DESC) AS rnk
+    FROM dannys_diner.sales s
+    JOIN dannys_diner.menu m ON s.product_id = m.product_id
+    GROUP BY s.customer_id, m.product_name
+)
+SELECT customer_id, product_name, order_count
+FROM customer_order_counts
+WHERE rnk = 1;
+```
+
+| customer_id | product_name | order_count |
+|-------------|--------------|-------------|
+| A           | ramen        | 3           |
+| B           | ramen        | 2           |
+| B           | curry        | 2           |
+| B           | sushi        | 2           |
+| C           | ramen        | 3           |
+
 ---
 **6. Which item was purchased first by the customer after they became a member?**
 
