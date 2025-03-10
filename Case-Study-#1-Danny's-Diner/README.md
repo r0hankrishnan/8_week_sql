@@ -37,10 +37,10 @@ ORDER BY sum_sales DESC;
 
 ```sql
 SELECT
-    	sales.customer_id,
-        COUNT(DISTINCT sales.order_date)
-    FROM dannys_diner.sales
-    GROUP BY customer_id;
+    sales.customer_id,
+    COUNT(DISTINCT sales.order_date)
+FROM dannys_diner.sales
+GROUP BY customer_id;
 ```
 
 | customer_id | count |
